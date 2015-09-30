@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="A8r-a1-Mvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBy-Rf-uhy">
+                                <rect key="frame" x="16" y="20" width="87" height="30"/>
+                                <state key="normal" title="Identify User">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="identifyUser" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tbF-99-F6e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qS8-MY-e7o">
+                                <rect key="frame" x="16" y="210" width="323" height="30"/>
+                                <state key="normal" title="Track event with attributes and value increment">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="trackEventWithAttributesAndValueIncrement" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wSP-lj-Gaq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qt3-tb-VkV">
+                                <rect key="frame" x="16" y="58" width="149" height="30"/>
+                                <state key="normal" title="Set one user attribute">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setOneUserAttribute" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eFg-EN-jTM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kav-oO-bSg">
+                                <rect key="frame" x="16" y="96" width="168" height="30"/>
+                                <state key="normal" title="Set many user attributes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setManyUserAttributes" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JdS-bp-zCN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irg-ZQ-t8w">
+                                <rect key="frame" x="16" y="134" width="79" height="30"/>
+                                <state key="normal" title="Track event">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="trackEvent" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VtR-Bj-iUZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n46-BB-f7z">
+                                <rect key="frame" x="16" y="172" width="181" height="30"/>
+                                <state key="normal" title="Track event with attributes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="trackEventWithAttributes" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1H6-ef-ihq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16" y="97"/>
+        </scene>
+        <!--Mixpanel-->
+        <scene sceneID="jza-7G-kPY">
+            <objects>
+                <viewController id="o9D-X9-SqL" customClass="MixpanelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qe7-af-R3u"/>
+                        <viewControllerLayoutGuide type="bottom" id="hNp-vM-kb3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jHE-Ve-gL7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mixpanel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuI-5q-acp">
+                                <rect key="frame" x="16" y="28" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmM-fT-Bln">
+                                <rect key="frame" x="30" y="57" width="87" height="30"/>
+                                <state key="normal" title="Identify User">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="identifyUser" destination="o9D-X9-SqL" eventType="touchUpInside" id="2jj-Wi-zww"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyw-2V-Bp8">
+                                <rect key="frame" x="30" y="95" width="149" height="30"/>
+                                <state key="normal" title="Set one user attribute">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setOneUserAttribute" destination="o9D-X9-SqL" eventType="touchUpInside" id="rM5-XX-zbB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j51-b1-eVB">
+                                <rect key="frame" x="30" y="133" width="168" height="30"/>
+                                <state key="normal" title="Set many user attributes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setManyUserAttributes" destination="o9D-X9-SqL" eventType="touchUpInside" id="cD1-ux-rgH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XE8-5H-aSo">
+                                <rect key="frame" x="30" y="171" width="79" height="30"/>
+                                <state key="normal" title="Track event">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="trackEvent" destination="o9D-X9-SqL" eventType="touchUpInside" id="42e-Au-Sjl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQQ-Mg-R16">
+                                <rect key="frame" x="30" y="209" width="181" height="30"/>
+                                <state key="normal" title="Track event with attributes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="trackEventWithAttributes" destination="o9D-X9-SqL" eventType="touchUpInside" id="9oW-lu-USf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mixpanel" id="7lt-un-bHi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VXE-YI-ciK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="1440"/>
+        </scene>
+        <!--Localytics-->
+        <scene sceneID="OcQ-yA-i9f">
+            <objects>
+                <viewController id="G2d-v3-9sb" customClass="LocalyticsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cny-Yz-W6v"/>
+                        <viewControllerLayoutGuide type="bottom" id="xTk-Ov-VAH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OQd-ff-uP4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Localytics" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4L-tp-w1m">
+                                <rect key="frame" x="16" y="28" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0w-h1-vBD">
+                                <rect key="frame" x="28" y="57" width="87" height="30"/>
+                                <state key="normal" title="Identify User">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="identifyUser" destination="G2d-v3-9sb" eventType="touchUpInside" id="BJT-jJ-qIv"/>
+                                    <action selector="identifyUser" destination="vXZ-lx-hvc" eventType="touchUpInside" id="d0U-1l-Fz2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwb-5h-f26">
+                                <rect key="frame" x="28" y="247" width="273" height="30"/>
+                                <state key="normal" title="Track event with attrs + value increment">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="trackEventWithAttributesAndValueIncrement" destination="G2d-v3-9sb" eventType="touchUpInside" id="Xg7-vb-FmO"/>
+                                    <action selector="trackEventWithAttributesAndValueIncrement" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nyE-OE-KT2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eew-fl-byp">
+                                <rect key="frame" x="28" y="95" width="149" height="30"/>
+                                <state key="normal" title="Set one user attribute">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setOneUserAttribute" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QdD-fP-xbo"/>
+                                    <action selector="setOneUserAttribute" destination="G2d-v3-9sb" eventType="touchUpInside" id="uie-02-4ki"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WF-5i-3Se">
+                                <rect key="frame" x="28" y="133" width="168" height="30"/>
+                                <state key="normal" title="Set many user attributes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setManyUserAttributes" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cgZ-FU-pbN"/>
+                                    <action selector="setManyUserAttributes" destination="G2d-v3-9sb" eventType="touchUpInside" id="qpN-9F-yOp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnU-h6-IH1">
+                                <rect key="frame" x="28" y="171" width="79" height="30"/>
+                                <state key="normal" title="Track event">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="trackEvent" destination="G2d-v3-9sb" eventType="touchUpInside" id="RWb-wz-UNa"/>
+                                    <action selector="trackEvent" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xWu-JG-CWN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sly-Qu-6Lx">
+                                <rect key="frame" x="28" y="209" width="181" height="30"/>
+                                <state key="normal" title="Track event with attributes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="trackEventWithAttributes" destination="G2d-v3-9sb" eventType="touchUpInside" id="35O-ML-MIq"/>
+                                    <action selector="trackEventWithAttributes" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WzO-kD-XUZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Localytics" id="cMb-nr-h9r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pbc-2y-bZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="487" y="773"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="W7x-YD-DMe">
+            <objects>
+                <tabBarController id="A8r-a1-Mvc" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Vni-pC-zwO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="G2d-v3-9sb" kind="relationship" relationship="viewControllers" id="U98-wn-rGE"/>
+                        <segue destination="o9D-X9-SqL" kind="relationship" relationship="viewControllers" id="Zg2-gB-8H0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vpb-Lb-6Vg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-482" y="1110"/>
+        </scene>
+    </scenes>
+</document>

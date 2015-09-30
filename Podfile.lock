@@ -1,0 +1,21 @@
+PODS:
+  - Aspects (1.4.1)
+  - Liquid (1.2.1)
+  - Localytics (3.5.0)
+  - Mixpanel (2.8.3):
+    - Mixpanel/Mixpanel (= 2.8.3)
+  - Mixpanel/Mixpanel (2.8.3)
+
+DEPENDENCIES:
+  - Aspects
+  - Liquid
+  - Localytics
+  - Mixpanel
+
+SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  Liquid: 8b5bdadc5194f45e1dafe5a5b91994b75f98706b
+  Localytics: 856c2183047b3d9d7c4c0bbbbe95cc3fe110fe77
+  Mixpanel: fd52e097ae0d27295d0595b2261c60b94d191fda
+
+COCOAPODS: 0.39.0.beta.4
