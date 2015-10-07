@@ -15,6 +15,7 @@ With this Pod installed, all events being tracked by Localytics or Mixpanel will
     ```ruby
     pod 'Liquid-Localytics-Interceptor/Localytics'
     pod 'Liquid-Localytics-Interceptor/Mixapanel'
+    pod 'Liquid-Localytics-Interceptor/GoogleAnalytics'
     ```
 
 3. Run `pod install` and wait for CocoaPod to install Liquid SDK.
@@ -25,7 +26,8 @@ If your using Localytics:
 ```obj-c
 // AppDelegate.m
 #import "AppDelegate.h"
-#import "Localytics.h"
+#import <Localytics/Localytics.h>
+#import <Liquid/Liquid.h>
 #import "LiquidLocalyticsInterceptor.h"
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -40,12 +42,28 @@ If you're using Mixpanel:
 ```obj-c
 // AppDelegate.m
 #import "AppDelegate.h"
-#import "Mixpanel.h"
+#import <Mixpanel/Mixpanel.h>
+#import <Liquid/Liquid.h>
 #import "LiquidMixpanelInterceptor.h"
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [Liquid sharedInstanceWithToken:@"YOUR-LIQUID-TOKEN"]; // before Mixpanel
     [Mixpanel sharedInstanceWithToken:@"YOUR-MIXPANEL-TOKEN"];
+    return YES;
+}
+```
+
+If you're using Google Analytics:
+
+```obj-c
+// AppDelegate.m
+#import "AppDelegate.h"
+#import <Google/Analytics.h>
+#import <Liquid/Liquid.h>
+#import <LiquidMixpanelInterceptor.h"
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [Liquid sharedInstanceWithToken:@"YOUR-LIQUID-TOKEN"];
     return YES;
 }
 ```

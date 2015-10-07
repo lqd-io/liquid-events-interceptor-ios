@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1DE069CA523EF5FBDE0D7377 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 334D2887648DD652411F2211 /* libPods.a */; };
 		A83B6A76A0FBDA43241C2444 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 334D2887648DD652411F2211 /* libPods.a */; };
+		A90FA6161BBC844700BC68C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A90FA6151BBC844700BC68C9 /* GoogleService-Info.plist */; };
+		A90FA6191BBD4A4500BC68C9 /* GoogleAnalyticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90FA6181BBD4A4500BC68C9 /* GoogleAnalyticsViewController.m */; };
 		A9BD3D4B1BAF2DB70066CCB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BD3D4A1BAF2DB70066CCB2 /* main.m */; };
 		A9BD3D4E1BAF2DB70066CCB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BD3D4D1BAF2DB70066CCB2 /* AppDelegate.m */; };
 		A9BD3D541BAF2DB70066CCB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BD3D521BAF2DB70066CCB2 /* Main.storyboard */; };
@@ -24,6 +26,7 @@
 		A9E0124D1BBC573E00B1265E /* LQAttributesSanitizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E012441BBC573E00B1265E /* LQAttributesSanitizer.m */; };
 		A9E012501BBC5AE800B1265E /* LocalyticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E0124F1BBC5AE800B1265E /* LocalyticsViewController.m */; };
 		A9E012531BBC5CD000B1265E /* MixpanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E012521BBC5CD000B1265E /* MixpanelViewController.m */; };
+		A9E7AAB51BC3E00800868AB3 /* LiquidGoogleAnalyticsInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E7AAB41BC3E00800868AB3 /* LiquidGoogleAnalyticsInterceptor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +53,9 @@
 /* Begin PBXFileReference section */
 		135ACD54C311E93E943516BE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		334D2887648DD652411F2211 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90FA6151BBC844700BC68C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A90FA6171BBD4A4500BC68C9 /* GoogleAnalyticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleAnalyticsViewController.h; sourceTree = "<group>"; };
+		A90FA6181BBD4A4500BC68C9 /* GoogleAnalyticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleAnalyticsViewController.m; sourceTree = "<group>"; };
 		A9BD3D451BAF2DB70066CCB2 /* LiquidEventsInterceptor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquidEventsInterceptor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BD3D491BAF2DB70066CCB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9BD3D4A1BAF2DB70066CCB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -70,6 +76,8 @@
 		A9E0124F1BBC5AE800B1265E /* LocalyticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalyticsViewController.m; sourceTree = "<group>"; };
 		A9E012511BBC5CD000B1265E /* MixpanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixpanelViewController.h; sourceTree = "<group>"; };
 		A9E012521BBC5CD000B1265E /* MixpanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixpanelViewController.m; sourceTree = "<group>"; };
+		A9E7AAB31BC3E00800868AB3 /* LiquidGoogleAnalyticsInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LiquidGoogleAnalyticsInterceptor.h; path = lib/LiquidGoogleAnalyticsInterceptor.h; sourceTree = "<group>"; };
+		A9E7AAB41BC3E00800868AB3 /* LiquidGoogleAnalyticsInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LiquidGoogleAnalyticsInterceptor.m; path = lib/LiquidGoogleAnalyticsInterceptor.m; sourceTree = "<group>"; };
 		AB5EC48BC0824C446DAE52A2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +120,7 @@
 		A9BD3D3C1BAF2DB70066CCB2 = {
 			isa = PBXGroup;
 			children = (
+				A90FA6151BBC844700BC68C9 /* GoogleService-Info.plist */,
 				A9E0123E1BBC537700B1265E /* lib */,
 				A9BD3D471BAF2DB70066CCB2 /* LiquidEventsInterceptorDemo */,
 				A9BD3D461BAF2DB70066CCB2 /* Products */,
@@ -139,6 +148,8 @@
 				A9E012521BBC5CD000B1265E /* MixpanelViewController.m */,
 				A9E0124E1BBC5AE800B1265E /* LocalyticsViewController.h */,
 				A9E0124F1BBC5AE800B1265E /* LocalyticsViewController.m */,
+				A90FA6171BBD4A4500BC68C9 /* GoogleAnalyticsViewController.h */,
+				A90FA6181BBD4A4500BC68C9 /* GoogleAnalyticsViewController.m */,
 				A9BD3D521BAF2DB70066CCB2 /* Main.storyboard */,
 				A9BD3D551BAF2DB70066CCB2 /* Images.xcassets */,
 				A9BD3D571BAF2DB70066CCB2 /* LaunchScreen.xib */,
@@ -164,6 +175,8 @@
 				A9E012401BBC573E00B1265E /* LiquidLocalyticsInterceptor.m */,
 				A9E012411BBC573E00B1265E /* LiquidMixpanelInterceptor.h */,
 				A9E012421BBC573E00B1265E /* LiquidMixpanelInterceptor.m */,
+				A9E7AAB31BC3E00800868AB3 /* LiquidGoogleAnalyticsInterceptor.h */,
+				A9E7AAB41BC3E00800868AB3 /* LiquidGoogleAnalyticsInterceptor.m */,
 				A9E012431BBC573E00B1265E /* LQAttributesSanitizer.h */,
 				A9E012441BBC573E00B1265E /* LQAttributesSanitizer.m */,
 			);
@@ -282,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9BD3D541BAF2DB70066CCB2 /* Main.storyboard in Resources */,
+				A90FA6161BBC844700BC68C9 /* GoogleService-Info.plist in Resources */,
 				A9BD3D591BAF2DB70066CCB2 /* LaunchScreen.xib in Resources */,
 				A9BD3D561BAF2DB70066CCB2 /* Images.xcassets in Resources */,
 			);
@@ -393,7 +407,9 @@
 				A9E0124A1BBC573E00B1265E /* LiquidMixpanelInterceptor.m in Sources */,
 				A9E012531BBC5CD000B1265E /* MixpanelViewController.m in Sources */,
 				A9E012471BBC573E00B1265E /* LiquidLocalyticsInterceptor.m in Sources */,
+				A90FA6191BBD4A4500BC68C9 /* GoogleAnalyticsViewController.m in Sources */,
 				A9BD3D4B1BAF2DB70066CCB2 /* main.m in Sources */,
+				A9E7AAB51BC3E00800868AB3 /* LiquidGoogleAnalyticsInterceptor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -506,7 +522,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

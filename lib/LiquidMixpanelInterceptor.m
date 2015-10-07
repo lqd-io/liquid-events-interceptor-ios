@@ -8,10 +8,12 @@
 
 #import "LiquidMixpanelInterceptor.h"
 #import "LQAttributesSanitizer.h"
-#import "Aspects.h"
+#import <Aspects/Aspects.h>
 #import <objc/runtime.h>
+#import <Liquid/Liquid.h>
+#import <Mixpanel/Mixpanel.h>
 
-#define kLQEventsInterceptorLogLevel kLQLogLevelInfo
+#define kLQEventsInterceptorLogLevel kLQLogLevelWarning
 
 @implementation LiquidMixpanelInterceptor
 

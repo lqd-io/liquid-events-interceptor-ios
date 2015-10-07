@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name              = "Liquid-Events-Interceptor"
-  s.version           = "0.1.0"
+  s.version           = "0.1.1"
   s.summary           = "This Pod allows the integration of Liquid without any coding, if you already have Localytics or Mixpanel SDK installed in your application."
   s.homepage          = "https://onliquid.com/"
   s.license           = 'Apache, Version 2.0'
@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.documentation_url = "https://lqd.io/documentation/ios"
   s.library           = 'Liquid-Events-Interceptor'
 
-  s.platform     = :ios, '6.0'
-  s.ios.deployment_target = '6.0'
+  s.platform     = :ios, '7.0'
+  s.ios.deployment_target = '7.0'
   s.requires_arc = true
   s.preserve_paths = [ 'LiquidEventsInterceptor.xcodeproj' ]
 
@@ -34,6 +34,12 @@ Pod::Spec.new do |s|
     mixpanel.source_files = ['lib/LiquidMixpanelInterceptor.{m,h}', 'lib/**/LQ*.{m,h}']
     mixpanel.public_header_files = ['lib/LiquidMixpanelInterceptor.h', 'lib/**/LQ*.h']
     mixpanel.dependency 'Mixpanel'
+  end
+
+  s.subspec 'GoogleAnalytics' do |google|
+    google.source_files = ['lib/LiquidGoogleAnalyticsInterceptor.{m,h}', 'lib/**/LQ*.{m,h}']
+    google.public_header_files = ['lib/LiquidGoogleAnalyticsInterceptor.h', 'lib/**/LQ*.h']
+    google.dependency 'Google/Analytics'
   end
 end
 

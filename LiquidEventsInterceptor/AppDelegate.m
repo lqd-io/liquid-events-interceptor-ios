@@ -7,9 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import <Localytics/Localytics.h>
 #import "LiquidLocalyticsInterceptor.h"
 #import "LiquidMixpanelInterceptor.h"
+#import <Google/Analytics.h>
 
 @interface AppDelegate ()
 
@@ -19,9 +19,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Liquid sharedInstanceWithToken:@"YOUR-LIQUID-TOKEN"]; // before Localytics & Mixapnel
+    [Liquid sharedInstanceWithToken:@"YOUR-LIQUID-TOKEN"]; // before Localytics, Mixapnel or Google Analytics
     [Localytics autoIntegrate:@"YOUR-LOCALYTICS-APP-KEY" launchOptions:launchOptions];
     [Mixpanel sharedInstanceWithToken:@"YOUR-MIXPANEL-TOKEN"];
+
+    // Configure tracker from GoogleService-Info.plist.
+    NSError *configureError;
+    [[GGLContext sharedInstance] configureWithError:&configureError];
+    NSAssert(!configureError, @"Error configuring Google services: %@", configureError);
+    GAI *gai = [GAI sharedInstance];
+    gai.trackUncaughtExceptions = NO;
+    gai.logger.logLevel = kGAILogLevelInfo;
+
     return YES;
 }
 

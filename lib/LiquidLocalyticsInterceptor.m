@@ -10,8 +10,10 @@
 #import "LQAttributesSanitizer.h"
 #import <objc/runtime.h>
 #import <Aspects/Aspects.h>
+#import <Liquid/Liquid.h>
+#import <Localytics/Localytics.h>
 
-#define kLQEventsInterceptorLogLevel kLQLogLevelNone
+#define kLQEventsInterceptorLogLevel kLQLogLevelWarning
 
 static Class _localyticsManagerClass = nil;
 
@@ -64,7 +66,7 @@ static Class _localyticsManagerClass = nil;
 #pragma mark - Helper methods for dynamic class & method referencing
 
 + (Class)classWithName:(NSString *)className {
-    Class localyticsManagerClass = NULL;
+    Class theClass = NULL;
     int numClasses;
     Class *classes = NULL;
     numClasses = objc_getClassList(NULL, 0);
@@ -75,15 +77,15 @@ static Class _localyticsManagerClass = nil;
         for (int i = 0; i < numClasses; i++) {
             Class class = classes[i];
             if ([NSStringFromClass(class) isEqualToString:className]) {
-                localyticsManagerClass = class;
+                theClass = class;
             }
         }
         free(classes);
     }
-    return localyticsManagerClass;
+    return theClass;
 }
 
-+ (Class )localyticsManagerClass {
++ (Class)localyticsManagerClass {
     if (!_localyticsManagerClass) {
         _localyticsManagerClass = [self classWithName:@"LLLocalyticsManager"];
     }

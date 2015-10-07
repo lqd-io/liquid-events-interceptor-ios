@@ -151,6 +151,69 @@
             </objects>
             <point key="canvasLocation" x="338" y="1440"/>
         </scene>
+        <!--Google-->
+        <scene sceneID="mrc-Sr-cyt">
+            <objects>
+                <viewController id="lsL-pD-xUh" customClass="GoogleAnalyticsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LoE-KP-v2i"/>
+                        <viewControllerLayoutGuide type="bottom" id="pte-qE-mCx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4bc-EV-N48">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Google Analytics" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqE-Qi-ihL">
+                                <rect key="frame" x="16" y="28" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVy-ZL-D9h">
+                                <rect key="frame" x="30" y="57" width="87" height="30"/>
+                                <state key="normal" title="Identify User">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="identifyUser" destination="lsL-pD-xUh" eventType="touchUpInside" id="wdJ-Li-dwe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QT-Xy-f5B">
+                                <rect key="frame" x="30" y="95" width="79" height="30"/>
+                                <state key="normal" title="Track event">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="trackEvent" destination="lsL-pD-xUh" eventType="touchUpInside" id="ygp-26-bjI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qy-Yg-KkO">
+                                <rect key="frame" x="30" y="133" width="149" height="30"/>
+                                <state key="normal" title="Track event with label">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="trackEventWithLabel" destination="lsL-pD-xUh" eventType="touchUpInside" id="zSK-wm-P9S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVg-ld-Mc7">
+                                <rect key="frame" x="30" y="171" width="219" height="30"/>
+                                <state key="normal" title="Track event with label and value">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="trackEventWithLabelAndValue" destination="lsL-pD-xUh" eventType="touchUpInside" id="xVZ-Dc-ZnI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Google" id="bwk-0c-UcA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VU1-CV-RTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-564" y="1627"/>
+        </scene>
         <!--Localytics-->
         <scene sceneID="OcQ-yA-i9f">
             <objects>
@@ -251,11 +314,12 @@
                     <connections>
                         <segue destination="G2d-v3-9sb" kind="relationship" relationship="viewControllers" id="U98-wn-rGE"/>
                         <segue destination="o9D-X9-SqL" kind="relationship" relationship="viewControllers" id="Zg2-gB-8H0"/>
+                        <segue destination="lsL-pD-xUh" kind="relationship" relationship="viewControllers" id="y0r-lO-Smi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vpb-Lb-6Vg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-482" y="1110"/>
+            <point key="canvasLocation" x="-644" y="850"/>
         </scene>
     </scenes>
 </document>
