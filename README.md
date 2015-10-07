@@ -60,10 +60,19 @@ If you're using Google Analytics:
 #import "AppDelegate.h"
 #import <Google/Analytics.h>
 #import <Liquid/Liquid.h>
-#import <LiquidMixpanelInterceptor.h"
+#import "LiquidMixpanelInterceptor.h"
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Liquid sharedInstanceWithToken:@"YOUR-LIQUID-TOKEN"];
+    [Liquid sharedInstanceWithToken:@"YOUR-LIQUID-TOKEN"]; // before Google Analytics
+
+    // Configure tracker from GoogleService-Info.plist.
+    NSError *configureError;
+    [[GGLContext sharedInstance] configureWithError:&configureError];
+    NSAssert(!configureError, @"Error configuring Google services: %@", configureError);
+    GAI *gai = [GAI sharedInstance];
+    gai.trackUncaughtExceptions = NO;
+    gai.logger.logLevel = kGAILogLevelError;
+
     return YES;
 }
 ```
