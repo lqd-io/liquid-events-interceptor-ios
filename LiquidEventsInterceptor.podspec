@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name              = "Liquid-Events-Interceptor"
+  s.name              = "LiquidEventsInterceptor"
   s.version           = "0.1.1"
   s.summary           = "This Pod allows the integration of Liquid without any coding, if you already have Localytics or Mixpanel SDK installed in your application."
   s.homepage          = "https://onliquid.com/"
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source            = { :git => "https://github.com/lqd-io/liquid-events-interceptor-ios.git", :tag => "v#{s.version}" }
   s.social_media_url  = 'https://twitter.com/onliquid'
   s.documentation_url = "https://lqd.io/documentation/ios"
-  s.library           = 'Liquid-Events-Interceptor'
+  s.library           = 'LiquidEventsInterceptor'
 
   s.platform     = :ios, '7.0'
   s.ios.deployment_target = '7.0'

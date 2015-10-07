@@ -13,9 +13,9 @@ With this Pod installed, all events being tracked by Localytics or Mixpanel will
 2. Open your Xcode project folder and create/edit a file called `Podfile` with the following content, depending on the analytics service you're already using. **Use only one of them**:
 
     ```ruby
-    pod 'Liquid-Localytics-Interceptor/Localytics'
-    pod 'Liquid-Localytics-Interceptor/Mixapanel'
-    pod 'Liquid-Localytics-Interceptor/GoogleAnalytics'
+    pod 'LiquidEventsInterceptor/Localytics'
+    pod 'LiquidEventsInterceptor/Mixapanel'
+    pod 'LiquidEventsInterceptor/GoogleAnalytics'
     ```
 
 3. Run `pod install` and wait for CocoaPod to install Liquid SDK.
